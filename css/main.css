@@ -9,6 +9,7 @@ header {
 	background-size: cover;
 	display: flex;
 	flex-flow: column;
+	margin-bottom: 40px;
 }
 nav {
 	display: flex;
@@ -26,15 +27,31 @@ nav {
 	margin: 20px;
 }
 .chevron {
-	height: 20px;
-	width: 20px;
+	height: 30px;
+	width: 30px;
 	align-self: flex-end;	
 	align-self: center;
 	margin: 20px;
-	transition: position 3s ease; 
+	top: 0px;
+	transition: all 0.4s ease; 
 }
 .chevron:hover {
 	position: relative;
 	top: 5px;
+}
+.about {
+	display: flex;
+	max-width: 600px;
+	margin: auto;
+	padding: 10px;
+	flex-flow: column;
+	align-items: center;
+}
+footer {
+	height: 100px;
+	display: flex;
+	margin: auto;
+	background-color: rgb(251,220,88);
+	align-items: center;
 }
 
