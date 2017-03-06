@@ -1,6 +1,6 @@
 * {
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 }
 p {
 	font-size: 1.5rem;
@@ -32,11 +32,11 @@ nav {
 .chevron {
 	height: 30px;
 	width: 30px;
-	align-self: flex-end;
+	align-self: flex-end;	
 	align-self: center;
 	margin: 20px;
 	top: 0px;
-	transition: all 0.4s ease;
+	transition: all 0.4s ease; 
 }
 .chevron:hover {
 	position: relative;
@@ -70,7 +70,7 @@ nav {
 	width: 600px;
 	height: 300px;
 }
-.pictures{
+.pictures {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -83,16 +83,15 @@ nav {
 .pictures h2 {
 	margin: 40px;
 }
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
 .image-holder {
 	width: 100vw;
-	height: 800px;
+	height: auto;
 	margin: 10px;
 	background-color:pink;
+}
+img {
+	width: 100vw;
+	height: auto;
 }
 footer {
 	height: 100px;
@@ -101,3 +100,4 @@ footer {
 	background-color: rgb(251,220,88);
 	align-items: center;
 }
+
