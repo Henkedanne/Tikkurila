@@ -5,7 +5,7 @@
 
 header {
 	height: 100vh;
-	background-image: url("/img/coverphoto.jpg");
+	background: url("/img/coverphoto.jpg") no-repeat center center fixed;
 	background-size: cover;
 	display: flex;
 	flex-flow: column;
