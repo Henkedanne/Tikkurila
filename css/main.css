@@ -7,7 +7,7 @@ p {
 }
 
 header {
-	height: 100vh;
+	height: 10vh;
 	background: url("/img/coverphoto.jpg") no-repeat center center;
 	background-size: cover;
 	display: flex;
