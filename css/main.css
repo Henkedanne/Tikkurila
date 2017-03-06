@@ -1,13 +1,13 @@
 * {
 	margin: 0;
-	padding: 0;	
+	padding: 0;
 }
 p {
 	font-size: 1.5rem;
 }
 
 header {
-	height: 100vh;
+	height: 10vh;
 	background: url("/img/coverphoto.jpg") no-repeat center center;
 	background-size: cover;
 	display: flex;
@@ -32,11 +32,11 @@ nav {
 .chevron {
 	height: 30px;
 	width: 30px;
-	align-self: flex-end;	
+	align-self: flex-end;
 	align-self: center;
 	margin: 20px;
 	top: 0px;
-	transition: all 0.4s ease; 
+	transition: all 0.4s ease;
 }
 .chevron:hover {
 	position: relative;
@@ -101,4 +101,3 @@ footer {
 	background-color: rgb(251,220,88);
 	align-items: center;
 }
-
