@@ -9,8 +9,6 @@ h1, h2 {
 p {
 	font-size: 1.5rem;
 }
-
-
 header {
 	height: 100vh;
 	background: url("/img/coverphoto.jpg") no-repeat center center;
@@ -72,8 +70,8 @@ nav {
 }
 .video-holder {
 	background-color: pink;
-	width: 640px;
-	height: auto;
+	width: 60%;
+	height: 25%;
 }
 .pictures {
 	display: flex;
