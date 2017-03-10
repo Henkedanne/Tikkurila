@@ -92,10 +92,41 @@ nav {
 	margin: 10px;
 	background-color:pink;
 }
-img {
+.full-image {
 	width: 100vw;
 	height: auto;
 }
+
+.profiles {
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+	flex-wrap: wrap;
+
+}
+.profiles h3 {
+	margin: 60px auto;
+}
+.profile-container {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.profile {
+	display: flex;
+	flex-flow: column;	
+	align-items: center;
+	padding: 5px;
+	margin-bottom: 30px;
+}
+.profile-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	margin-bottom: 20px;
+
+
 footer {
 	height: 100px;
 	display: flex;
