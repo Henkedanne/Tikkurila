@@ -101,18 +101,12 @@ footer {
 	background-color: rgb(251,220,88);
 	align-items: center;
 }
-
-.hyperlink {
+a {
 	text-decoration: none;
 	color: inherit;
-	border-bottom: 3px solid #DB7093;
-
-
-
-
+	border-bottom: 2.5px solid #DB7093;
 }
-
-.hyperlink:hover {
+a:hover {
 	color: pink;
 	border-bottom: none;
 	text-decoration: none;
