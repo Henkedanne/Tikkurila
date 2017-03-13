@@ -8,7 +8,16 @@ h1, h2 {
 
 p {
   font-size: 1.5rem; }
-
+a {
+	text-decoration: none;
+	color: inherit;
+	border-bottom: 2.5px solid #DB7093;
+}
+a:hover {
+	color: pink;
+	border-bottom: none;
+	text-decoration: none;
+}
 header {
   height: 100vh;
   background: url("/img/coverphoto.jpg") no-repeat center center;
@@ -74,19 +83,20 @@ nav {
   margin: 40px; }
 
 .video-holder {
-  background-color: pink;
-  width: 60%;
-  height: 25%; }
-
-.pictures {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-flow: column;
-  background-color: #f8f8f8;
-  padding: 10px;
-  width: 100vw;
-  padding-bottom: 60px; }
+	background-color: pink;
+	width: 640px;
+	height: 360px;
+}
+.pictures{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-flow: column;
+	background-color: rgb(248,248,248);
+	padding: 10px;
+	width: 100vw;
+	padding-bottom: 60px
+}
 
 .pictures h2 {
   margin: 40px; }
@@ -138,8 +148,10 @@ nav {
   z-index: 10; }
 
 footer {
-  height: 100px;
-  display: flex;
-  margin: auto;
-  background-color: #fbdc58;
-  align-items: center; }
+	height: 100px;
+	display: flex;
+	margin: auto;
+	background-color: rgb(251,220,88);
+	align-items: center;
+}
+
