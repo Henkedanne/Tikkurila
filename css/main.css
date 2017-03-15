@@ -5,11 +5,18 @@
   padding: 0; }
 
 body {
-  font-size: 100%; }
+  font-size: 100%;
+  background-color: #F9F8F8; }
 
-h1, h2 {
+h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700; }
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(73, 195, 177, 0.2);
+  padding: 5px;
+  margin: 40px; }
 
 p {
   font-family: "Open Sans Condensed", sans-serif;
@@ -21,7 +28,7 @@ a {
   color: inherit;
   border-bottom: 2.5px solid #DB7093; }
   a:hover {
-    color: #DB7093;
+    background-color: #DB7093;
     border-bottom: none;
     text-decoration: none; }
 
@@ -43,7 +50,6 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: rgba(255, 255, 255, 0);
   z-index: 10; }
   nav ul {
     display: -webkit-box;
@@ -55,8 +61,7 @@ nav {
     margin-right: 30px; }
   nav li {
     font-size: 2rem;
-    margin-left: 5px;
-    padding-right: 10px; }
+    padding: 0 10px; }
 
 .logo {
   margin-left: 30px;
@@ -93,8 +98,6 @@ nav {
           align-items: center;
   text-align: justify;
   margin-bottom: 40px; }
-  .about h2 {
-    margin-bottom: 40px; }
 
 .videos {
   display: -webkit-box;
@@ -107,10 +110,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #169098;
   padding-bottom: 60px; }
-  .videos h2 {
-    margin: 40px; }
 
 video {
   max-width: 100%;
@@ -130,19 +130,15 @@ video {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  background-color: white;
+  background-color: #F9F8F8;
   padding: 10px;
   width: 100vw;
   padding-bottom: 60px; }
 
-.pictures h2 {
-  margin: 40px; }
-
 .image-holder {
   width: 100vw;
   height: auto;
-  margin: 10px;
-  background-color: pink; }
+  margin: 10px; }
 
 .full-image {
   width: 100vw;
@@ -214,7 +210,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  background-color: #fbdc58;
+  background-color: #FFC627;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
