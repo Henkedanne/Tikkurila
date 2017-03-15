@@ -1,25 +1,35 @@
+/* Fonts */
+$large-font: 'Raleway', sans-serif;
+$p-font: 'Open Sans Condensed', sans-serif;
+
+/* Colors */
+$white: rgba(248,248,248,1);
+$accent: #DB7093;
+$yellow: rgba(251,220,88,1);
+
 * {
 	margin: 0;
 	padding: 0;	
-	
-	
+}
+body {
+	font-size: 100%;
 }
 h1, h2 {
-	font-family: 'Raleway', sans-serif;
+	font-family: $large-font;
 	font-weight: 700;
 }
 p {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: $p-font;
 	font-size: 2rem;
 }
 a {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: $p-font;
 	text-decoration: none;
 	color: inherit;
-	border-bottom: 2.5px solid #DB7093;
+	border-bottom: 2.5px solid $accent;
 	
 	&:hover {
-		color: pink;
+		color: $accent;
 		border-bottom: none;
 		text-decoration: none;
 	}
@@ -89,18 +99,19 @@ nav {
 		margin-bottom: 40px;
 	}
 }
-.video {
+.videos {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	background-color: rgb(22, 144, 152);
 	padding-bottom: 60px;
-}
-.video h2 {
-	margin: 40px;
-
+	h2 {
+		margin: 40px;
+	}
 }
 video {
+	max-width: 100%;
+	height: auto;
 	margin-bottom: 40px;
 }
 
@@ -109,7 +120,7 @@ video {
 	flex-wrap: wrap;
 	align-items: center;
 	flex-flow: column;
-	background-color: rgb(248,248,248);
+	background-color: rgb(255,255,255);
 	padding: 10px;
 	width: 100vw;
 	padding-bottom: 60px
@@ -171,7 +182,8 @@ footer {
 	height: 100px;
 	display: flex;
 	margin: auto;
-	background-color: rgb(251,220,88);
+	background-color: $yellow;
 	align-items: center;
+	justify-content: center;
 }
 
