@@ -79,11 +79,19 @@ nav {
       align-self: baseline; }
 
 .chevron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  height: 30px;
-  width: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
   margin: 20px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: 0px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease; }
@@ -121,10 +129,12 @@ nav {
           align-items: center;
   padding-bottom: 60px; }
 
-video {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 40px; }
+.vid-container {
+  padding: 20px; }
+  @media (max-width: 700px) {
+    .vid-container iframe {
+      width: 320px;
+      height: 180px; } }
 
 .pictures {
   display: -webkit-box;
