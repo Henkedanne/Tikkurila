@@ -50,6 +50,9 @@ header {
   background-size: cover;
   margin-bottom: 40px; }
 
+.active {
+  display: block !important; }
+
 nav {
   position: fixed;
   display: -webkit-box;
@@ -60,7 +63,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 10; }
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     nav {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -74,8 +77,9 @@ nav {
         align-self: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       nav .list-wrapper {
+        display: none;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-flow: column;
@@ -92,7 +96,7 @@ nav {
     -ms-flex-item-align: baseline;
         align-self: baseline;
     margin-right: 30px; }
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       nav ul {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -101,10 +105,7 @@ nav {
         -webkit-box-direction: normal;
             -ms-flex-flow: column;
                 flex-flow: column;
-        width: 100%;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; } }
+        width: 100%; } }
   nav li {
     font-size: 2rem;
     padding: 0 10px; }
@@ -112,12 +113,13 @@ nav {
 .burger {
   display: none;
   font-size: 1.75em; }
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     .burger {
       display: block;
       position: absolute;
       top: 20px;
-      right: 20px; } }
+      right: 20px;
+      cursor: pointer; } }
 
 .logo {
   margin-left: 30px;
@@ -185,7 +187,7 @@ nav {
 
 .vid-container {
   padding: 20px; }
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     .vid-container iframe {
       width: 320px;
       height: 180px; } }

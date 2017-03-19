@@ -60,14 +60,18 @@ header {
 	background-size: cover;
 	margin-bottom: 40px;
 }
-
+.active {
+	
+	display: block !important; 
+	
+}
 nav {
 	position: fixed;
 	display: flex;
 	width: 100vw;
 	justify-content: space-between;
 	z-index: 10;
-	@media (max-width: 700px) {
+	@media (max-width: 768px) {
 		flex-flow: column;
 		
 	}
@@ -76,10 +80,12 @@ nav {
 		display: flex;
 		align-self: baseline;
 		flex-wrap: wrap;
-		@media (max-width: 700px) {
+		@media (max-width: 768px) {
+			display: none;
 			flex-flow: column;
 			width: 100%;
 			justify-content: center;
+
 			}
 		}
 	ul {
@@ -87,14 +93,12 @@ nav {
 		list-style: none;
 		align-self: baseline;
 		margin-right: 30px;
-		@media (max-width: 700px) {
+		@media (max-width: 768px) {
 			display: flex;
 			flex-flow: column;
 			width: 100%;
-			align-items: center;
-
-
-		}
+			
+			}
 	}
 	
 	li {
@@ -103,14 +107,16 @@ nav {
 
 	}
 }
+
 .burger {
 	display: none;
 	font-size: 1.75em;
-	@media (max-width: 700px) {
+	@media (max-width: 768px) {
 		display: block;
 		position: absolute;
 		top: 20px;
 		right: 20px;
+		cursor: pointer;
 	}
 }
 .logo {
@@ -132,9 +138,8 @@ nav {
 	top: 0px;
 	transition: all 0.4s ease; 
 	.chevholder {
-		display:flex;
+		display: flex;
 		align-items: center;
-
 	}
 	&:hover {
 		position: relative;
@@ -162,7 +167,7 @@ nav {
 .vid-container {
 	padding: 20px;
 	iframe {
-		@media (max-width: 700px) {
+		@media (max-width: 768px) {
 			width: 320px;
 			height: 180px;
 
@@ -238,4 +243,5 @@ footer {
 	align-items: center;
 	justify-content: center;
 }
+
 
