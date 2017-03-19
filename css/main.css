@@ -60,6 +60,30 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 10; }
+  @media (max-width: 700px) {
+    nav {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column; } }
+  nav .list-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    @media (max-width: 700px) {
+      nav .list-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -68,9 +92,32 @@ nav {
     -ms-flex-item-align: baseline;
         align-self: baseline;
     margin-right: 30px; }
+    @media (max-width: 700px) {
+      nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        width: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   nav li {
     font-size: 2rem;
     padding: 0 10px; }
+
+.burger {
+  display: none;
+  font-size: 1.75em; }
+  @media (max-width: 700px) {
+    .burger {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px; } }
 
 .logo {
   margin-left: 30px;
@@ -95,6 +142,13 @@ nav {
   top: 0px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease; }
+  .chevron .chevholder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .chevron:hover {
     position: relative;
     top: 5px; }
