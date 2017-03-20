@@ -71,6 +71,7 @@ nav {
 	width: 100vw;
 	justify-content: space-between;
 	z-index: 10;
+	background-color: $white;
 	@media (max-width: 768px) {
 		flex-flow: column;
 		
@@ -103,7 +104,7 @@ nav {
 	
 	li {
 		font-size: 2rem;
-		padding: 0 10px;
+		padding: 0 30px;
 
 	}
 }

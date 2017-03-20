@@ -1,6 +1,6 @@
 var burger = document.querySelector(".burger");
 var navList = document.querySelector(".list-wrapper");
-
+var navItems = document.querySelector(".list-wapper, ul");
 
 function toggleNav() { 
 	if(!navList.classList.contains("active")) {
@@ -11,5 +11,11 @@ function toggleNav() {
 	}
 }
 
+function closeNav() {
+	navList.classList.remove("active");
+	console.log("poop");
+}
+
 
 burger.addEventListener("click", toggleNav);
+navItems.addEventListener("click", closeNav);

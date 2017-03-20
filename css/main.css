@@ -62,7 +62,8 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 10; }
+  z-index: 10;
+  background-color: #F9F8F8; }
   @media (max-width: 768px) {
     nav {
       -webkit-box-orient: vertical;
@@ -108,7 +109,7 @@ nav {
         width: 100%; } }
   nav li {
     font-size: 2rem;
-    padding: 0 10px; }
+    padding: 0 30px; }
 
 .burger {
   display: none;
