@@ -110,15 +110,41 @@ nav {
 }
 
 .burger {
-	display: none;
+	display: block;
 	font-size: 1.75em;
+	cursor: pointer;
+
+	span {
+		height: 5px;
+		width: 30px;
+		background: $green;
+		border-radius: 6px;
+		&:before {
+			content: "";
+			position: absolute;
+			background-color: $green;
+			left: 0px;
+			width: 30px;
+			top: 10px;
+			height: 5px;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 10px;
+			left: 0px;
+			height: 5px;
+			width: 30px;
+			background-color: $green;
+		}
 	@media (max-width: 768px) {
-		display: block;
-		position: absolute;
+		display: flex;
+		
 		top: 20px;
 		right: 20px;
 		cursor: pointer;
 	}
+}
 }
 .logo {
 	margin-left: 30px;

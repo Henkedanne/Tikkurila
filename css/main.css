@@ -112,15 +112,38 @@ nav {
     padding: 0 30px; }
 
 .burger {
-  display: none;
-  font-size: 1.75em; }
-  @media (max-width: 768px) {
-    .burger {
-      display: block;
+  display: block;
+  font-size: 1.75em;
+  cursor: pointer; }
+  .burger span {
+    height: 5px;
+    width: 30px;
+    background: #49C3B1;
+    border-radius: 6px; }
+    .burger span:before {
+      content: "";
       position: absolute;
-      top: 20px;
-      right: 20px;
-      cursor: pointer; } }
+      background-color: #49C3B1;
+      left: 0px;
+      width: 30px;
+      top: 10px;
+      height: 5px; }
+    .burger span:after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 0px;
+      height: 5px;
+      width: 30px;
+      background-color: #49C3B1; }
+    @media (max-width: 768px) {
+      .burger span {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        top: 20px;
+        right: 20px;
+        cursor: pointer; } }
 
 .logo {
   margin-left: 30px;
