@@ -109,41 +109,38 @@ nav {
         width: 100%; } }
   nav li {
     font-size: 2rem;
-    padding: 0 30px; }
+    padding: 0 10px; }
+    @media (max-width: 768px) {
+      nav li {
+        padding: 0 30px; } }
 
 .burger {
   display: block;
   font-size: 1.75em;
-  cursor: pointer; }
+  cursor: pointer;
+  position: absolute; }
+  @media (max-width: 768px) {
+    .burger {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; } }
   .burger span {
+    position: relative;
     height: 5px;
     width: 30px;
     background: #49C3B1;
     border-radius: 6px; }
-    .burger span:before {
-      content: "";
-      position: absolute;
-      background-color: #49C3B1;
-      left: 0px;
-      width: 30px;
-      top: 10px;
-      height: 5px; }
-    .burger span:after {
-      content: "";
-      position: absolute;
-      bottom: 10px;
-      left: 0px;
-      height: 5px;
-      width: 30px;
-      background-color: #49C3B1; }
-    @media (max-width: 768px) {
-      .burger span {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        top: 20px;
-        right: 20px;
-        cursor: pointer; } }
+    .burger span:nth-child(1) {
+      top: 0px; }
+    .burger span:nth-child(2) {
+      top: 18px; }
+    .burger span:nth-child(3) {
+      top: 36px; }
 
 .logo {
   margin-left: 30px;

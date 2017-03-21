@@ -104,7 +104,10 @@ nav {
 	
 	li {
 		font-size: 2rem;
-		padding: 0 30px;
+		padding: 0 10px;
+		@media (max-width: 768px) {
+			padding: 0 30px;
+		}
 
 	}
 }
@@ -113,38 +116,32 @@ nav {
 	display: block;
 	font-size: 1.75em;
 	cursor: pointer;
-
+	position: absolute;
+	@media (max-width: 768px) {
+			display: flex;
+			align-self: flex-end;
+			top: 20px;
+			right: 20px;
+			cursor: pointer;
+			
+	}
 	span {
+		position: relative;
 		height: 5px;
 		width: 30px;
 		background: $green;
 		border-radius: 6px;
-		&:before {
-			content: "";
-			position: absolute;
-			background-color: $green;
-			left: 0px;
-			width: 30px;
-			top: 10px;
-			height: 5px;
+		&:nth-child(1) {
+			top: 0px;
 		}
-		&:after {
-			content: "";
-			position: absolute;
-			bottom: 10px;
-			left: 0px;
-			height: 5px;
-			width: 30px;
-			background-color: $green;
+		&:nth-child(2) {
+			top: 18px;
 		}
-	@media (max-width: 768px) {
-		display: flex;
+		&:nth-child(3) {
+			top: 36px;
+		}
 		
-		top: 20px;
-		right: 20px;
-		cursor: pointer;
 	}
-}
 }
 .logo {
 	margin-left: 30px;

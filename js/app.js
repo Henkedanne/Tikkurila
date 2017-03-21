@@ -19,3 +19,6 @@ function closeNav() {
 
 burger.addEventListener("click", toggleNav);
 navItems.addEventListener("click", closeNav);
+/*.addEventListener("scroll", function() {
+	console.log("scrolling");
+}); */
