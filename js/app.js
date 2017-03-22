@@ -2,12 +2,12 @@ var burger = document.querySelector(".burger");
 var navList = document.querySelector(".list-wrapper");
 var navItems = document.querySelector(".list-wapper, ul");
 
-function toggleNav() { 
-	if(!navList.classList.contains("active")) {
+function toggleClass(id, className) { 
+	if(!id.classList.contains(className)) {
 		
-		navList.classList.toggle("active");
+		id.classList.toggle(className);
 	} else{
-		navList.classList.remove("active");
+		id.classList.remove(className);
 	}
 }
 
@@ -17,5 +17,12 @@ function closeNav() {
 }
 
 
-burger.addEventListener("click", toggleNav);
+burger.addEventListener("click", function() {
+	toggleClass(navList, "active");
+	toggleClass(burger, "open");
+});
+
 navItems.addEventListener("click", closeNav);
+/*.addEventListener("scroll", function() {
+	console.log("scrolling");
+}); */
