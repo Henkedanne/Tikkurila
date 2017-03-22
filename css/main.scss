@@ -38,7 +38,7 @@ hr {
 }
 p {
 	font-family: $p-font;
-	font-size: 2rem;
+	font-size: 1.5em;
 }
 a {
 	font-family: $p-font;
@@ -61,9 +61,12 @@ header {
 	margin-bottom: 40px;
 }
 .active {
-	
 	display: block !important; 
-	
+}
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+
 }
 nav {
 	position: fixed;
@@ -113,46 +116,71 @@ nav {
 }
 
 .burger {
-	display: block;
+	display: none;
 	font-size: 1.75em;
-	cursor: pointer;
-	position: absolute;
+	align-self: center;
 	@media (max-width: 768px) {
-			display: flex;
-			align-self: flex-end;
-			top: 20px;
-			right: 20px;
+			display: block;			
+			position: relative;
+			width: 30px;
+			height: 30px;
 			cursor: pointer;
-			
+			transform: rotate(0deg);
+			margin: 10px 20px;
+			transition: .5s ease-in-out;
 	}
 	span {
-		position: relative;
-		height: 5px;
-		width: 30px;
-		background: $green;
+		display: block;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		background: #444;
 		border-radius: 6px;
+		opacity: 1;
+		left: 0px;
+		transform: rotate(0deg);
+		transition: .25s ease-in-out;
 		&:nth-child(1) {
 			top: 0px;
+			transform-origin: left center;
+			
 		}
 		&:nth-child(2) {
-			top: 18px;
+			top: 12px;
+			transform-origin: left center;
+			
 		}
 		&:nth-child(3) {
-			top: 36px;
+			top: 24px;
+			transform-origin: left center;
+			
 		}
 		
 	}
 }
+.open span:nth-child(1) {
+	transform: rotate(45deg);
+	top: 1px;
+}
+.open span:nth-child(2) {
+	width: 0%;
+	opacity: 0;
+}
+.open span:nth-child(3) {
+	transform: rotate(-45deg);
+	top: 23px;
+}
 .logo {
-	margin-left: 30px;
+	margin-left: 15px;
 	font-size: 2em;
-	align-self: baseline;
+	align-self: center;
+	
 }
 
 .chevron {
 	display: flex;
 	align-self: flex-end;
-	border: 1px solid #000;
+	border: 1px solid #444;
 	border-radius: 50%;
 	height: 40px;
 	width: 40px;
